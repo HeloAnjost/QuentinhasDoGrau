@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Quentinhas Do Grau - Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/quentinhas (1) (5).png" alt="img">
+            <h1>Quentinhas Do Grau</h1>
+            <nav>
+                <ul>
+
+                    <li><a href="#almoco">Almoço</a></li>
+                    <li><a href="#jantar">Jantar</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                    <li><a href="#sobremesas">Sobremesas</a></li>
+                    <li><a href="#carrinho" id="carrinhoLink">Carrinho <span id="carrinhoCount">(0)</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="almoco" class="menu-section">
+            <h2>Almoço</h2>
+            <div class="menu">
+                <div class="menu-item" onclick="adicionarAoCarrinho('Prato do Dia - R$ 15,00')">
+                    <img src="prato.jpg" alt="">
+                    <h3>Prato do Dia</h3>
+                    <p>R$ 15,00</p><button onclick="addToCart('Prato do Dia',15)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Feijoada Completa - R$ 20,00')">
+                    <img src="feijoadac.jpg" alt="" srcset="">
+                    <h3>Feijoada Completa</h3>
+                    <p>R$ 20,00</p><button onclick="addToCart('Feijoada Completa',20)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Frango Grelhado - R$ 18,00')">
+                  <img src="frango.jpg" alt="">
+                    <h3>Frango Grelhado</h3>
+                    <p>R$ 18,00</p><button onclick="addToCart('Frango Grelhado',18)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Estrogonofe de Carne - R$ 22,00')">
+                    <img src="estrogono.jpg" alt="" srcset="">
+                    <h3>Estrogonofe de Carne</h3>
+                    <p>R$ 22,00</p><button onclick="addToCart('Estrogonofe de Carne',15)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Salada Caesar - R$ 16,00')">
+                    <img src="salad.jpg" alt="">
+                    <h3>Salada Caesar</h3>
+                    <p>R$ 16,00</p><button onclick="addToCart('Salada Caesar',16)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Pasta ao Pesto - R$ 17,00')">
+                    <img src="hfdfh.jpg" alt="img">
+                    <h3>Pasta ao Pesto</h3>
+                    <p>R$ 17,00</p><button onclick="addToCart('Pasta ao Pesto',17)">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="jantar" class="menu-section">
+            <h2>Jantar</h2>
+            <div class="menu">
+                <div class="menu-item" onclick="adicionarAoCarrinho('Salmão Grelhado - R$ 30,00')">
+                    <img src="salmao.jpg" alt="">
+                    <h3>Salmão Grelhado</h3>
+                    <p>R$ 30,00</p><button onclick="addToCart('Salmão Grelhado',30)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Risoto de Funghi - R$ 28,00')">
+                    <img src="risoto.jpg" alt="">
+                    <h3>Risoto de Funghi</h3>
+                    <p>R$ 28,00</p><button onclick="addToCart('Risoto de Funghi',28)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Frango ao Molho Barbecue - R$ 24,00')">
+                    <img src="barbe.jpg" alt="">
+                    <h3>Frango ao Molho Barbecue</h3>
+                    <p>R$ 24,00</p><button onclick="addToCart('Frango ao Molho Barbecue',24)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Vegetariano com Tofu - R$ 20,00')">
+                    <img src="vegetal.jpg" alt="">
+                    <h3>Vegetariano com Tofu</h3>
+                    <p>R$ 20,00</p><button onclick="addToCart('Vegetariano com Tofu',20)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Spaghetti à Carbonara - R$ 26,00')">
+                    <img src="carbo.jpg" alt="">
+                    <h3>Spaghetti à Carbonara</h3>
+                    <p>R$ 26,00</p><button onclick="addToCart('Spaghetti à Carbonara',26)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Quiche de Legumes - R$ 22,00')">
+                    <img src="quic.jpg" alt="">
+                    <h3>Quiche de Legumes</h3>
+                    <p>R$ 22,00</p><button onclick="addToCart('Quiche de Legumes',22)">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="menu">
+                <div class="menu-item" onclick="adicionarAoCarrinho('Suco Natural - R$ 8,00')">
+                    <img src="suco.jpg" alt="" srcset="">
+                    <h3>Suco Natural</h3>
+                    <p>R$ 8,00</p><button onclick="addToCart('Suco Natural',8)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Refrigerante - R$ 5,00')">
+                    <img src="refri.jpg" alt="" srcset="">
+                    <h3>Refrigerante</h3>
+                    <p>R$ 5,00</p><button onclick="addToCart('Refrigerante',5)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Água Mineral - R$ 3,00')">
+                    <img src="ahh.jpg" alt="" srcset="">
+                    <h3>Água Mineral</h3>
+                    <p>R$ 3,00</p><button onclick="addToCart('Água Mineral',3)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Cerveja Artesanal - R$ 12,00')">
+                    <img src="cerv.jpg" alt="" srcset="">
+                    <h3>Cerveja Artesanal</h3>
+                    <p>R$ 12,00</p><button onclick="addToCart('Cerveja Artesanal',12)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Vinho Tinto - R$ 40,00')">
+                    <img src="vinho.jpg" alt="">
+                    <h3>Vinho Tinto</h3>
+                    <p>R$ 40,00</p><button onclick="addToCart('Vinho Tinto',40)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Coquetel da Casa - R$ 15,00')">
+                    <img src="coq.jpg" alt="" srcset="">
+                    <h3>Coquetel da Casa</h3>
+                    <p>R$ 15,00</p><button onclick="addToCart('Coquetel da Casa',15)">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobremesas" class="menu-section">
+            <h2>Sobremesas</h2>
+            <div class="menu">
+                <div class="menu-item" onclick="adicionarAoCarrinho('Pudim de Leite - R$ 10,00')">
+                    <img src="pud.jpg" alt="">
+                    <h3>Pudim de Leite</h3>
+                    <p>R$ 10,00</p><button onclick="addToCart('Pudim de Leite',10)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Torta de Limão - R$ 12,00')">
+                    <img src="torrg.jpg" alt="">
+                    <h3>Torta de Limão</h3>
+                    <p>R$ 12,00</p><button onclick="addToCart('Torta de Limão',12)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Brownie com Sorvete - R$ 15,00')">
+                    <img src="broo.jpg" alt="">
+                    <h3>Brownie com Sorvete</h3>
+                    <p>R$ 15,00</p><button onclick="addToCart('Brownie com Sorvete',15)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Mousse de Maracujá - R$ 10,00')">
+                    <img src="mara.jpg
+                    " alt="" srcset="">
+                    <h3>Mousse de Maracujá</h3>
+                    <p>R$ 10,00</p><button onclick="addToCart('Mousse de Maracujá',10)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Frutas da Estação - R$ 8,00')">
+                    <img src="frit.jpg" alt="">
+                    <h3>Frutas da Estação</h3>
+                    <p>R$ 8,00</p><button onclick="addToCart('Frutas da Estação',8)">Adicionar</button>
+                </div>
+                <div class="menu-item" onclick="adicionarAoCarrinho('Gelato Artesanal - R$ 12,00')">
+                    <img src="getalo.jpg" alt="">
+                    <h3>Gelato Artesanal</h3>
+                    <p>R$ 12,00</p><button onclick="addToCart('Gelato Artesanal',12)">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="carrinho" style="display: none;">
+            <h2>Carrinho de Pedidos</h2>
+            <ul id="listaCarrinho"></ul>
+            <button onclick="finalizarPedido()">Finalizar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quentinhas do Grau. Alimentando Corações.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
